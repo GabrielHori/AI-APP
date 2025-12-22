@@ -1,0 +1,15 @@
+{
+  "app_name": "V1-IA-APP",
+  "version": "1.0.0",
+  "backend_port": 8000,
+  "frontend_port": 3000,
+  "ollama": {
+    "default_model": "llama3",
+    "port": 11434,
+    "install_url": "https://ollama.com/download"
+  },
+  "monitoring": {
+    "interval": 5000,
+    "max_history": 100
+  }
+}

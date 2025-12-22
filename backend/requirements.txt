@@ -1,0 +1,10 @@
+# Python dependencies for V1-IA-APP backend
+fastapi==0.95.2
+uvicorn==0.22.0
+python-dotenv==1.0.0
+pydantic==1.10.7
+requests==2.31.0
+python-multipart==0.0.6
+psutil==5.9.5
+GPUtil==1.4.0
+pynvml

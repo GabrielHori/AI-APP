@@ -1,0 +1,21 @@
+{
+  "models": [
+    {
+      "name": "llama3",
+      "display_name": "Llama 3",
+      "description": "Modèle généraliste performant",
+      "size": "8B",
+      "recommended": true
+    },
+    {
+      "name": "mistral",
+      "display_name": "Mistral",
+      "description": "Modèle optimisé pour le français",
+      "size": "7B",
+      "recommended": false
+    }
+  ],
+  "default_model": "llama3",
+  "download_timeout": 3600,
+  "max_retries": 3
+}
