@@ -1,24 +1,26 @@
-V1-IA-APP / Horizon
-Description
+🌌 V1-IA-APP / Horizon
 
-V1-IA-APP est une application IA user-friendly qui permet d’interagir facilement avec différents modèles d’intelligence artificielle depuis un seul endroit. L’application est conçue pour simplifier l’expérience de l’utilisateur, qu’il soit débutant ou avancé.
 
-Fonctionnalités
+🔹 Description
 
-Lancer et gérer des modèles IA (Claude, Qwen, etc.)
+V1-IA-APP, alias Horizon, est une application d’intelligence artificielle user-friendly qui centralise l’utilisation de différents modèles IA (Claude, Qwen…) dans une interface moderne et intuitive. L’application simplifie l’expérience, que vous soyez débutant ou expert, et offre des options de personnalisation uniques.
 
-Interface graphique moderne et intuitive
+🚀 Fonctionnalités principales
 
-Personnalisation des boutons type "stream deck" pour exécuter des actions ou prompts spécifiques
+💡 Lancer et gérer différents modèles IA : Claude, Qwen, etc.
 
-Contrôle d’une bande LED directement depuis l’application (changement de couleur et effets)
+🎛 Interface graphique moderne et intuitive avec dark theme.
 
-Dark theme pour un confort visuel optimal
+🎮 Boutons personnalisables type "stream deck" pour exécuter des prompts ou actions spécifiques.
 
-Stack technique
+🌈 Contrôle de bande LED directement depuis l’application (changement de couleur et effets).
+
+⚡ Optimisée pour l’usage local ou cloud selon vos besoins.
+
+🛠 Stack technique
 
 Frontend : Electron + React
 
 Backend : Python + FastAPI
 
-Gestion des prompts et interactions IA : Intégration avec différents modèles locaux et cloud
+IA : Intégration de modèles locaux et cloud
