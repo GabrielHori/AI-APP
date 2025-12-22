@@ -11,10 +11,6 @@ V1-IA-APP, alias Horizon, est une application d’intelligence artificielle user
 
 🎛 Interface graphique moderne et intuitive avec dark theme.
 
-🎮 Boutons personnalisables type "stream deck" pour exécuter des prompts ou actions spécifiques.
-
-🌈 Contrôle de bande LED directement depuis l’application (changement de couleur et effets).
-
 ⚡ Optimisée pour l’usage local ou cloud selon vos besoins.
 
 🛠 Stack technique
