@@ -1,10 +1,11 @@
 from fastapi import APIRouter
-from app.services.gpu_service import get_gpu_info
+from app.services.gpu_service import gpu_service
 
-router = APIRouter(
-    tags=["GPU"]
-)
+router = APIRouter()
 
-@router.get("/gpu")
-async def gpu_info():
-    return get_gpu_info()
+@router.get("/info")
+async def get_gpu_info():
+    """
+    Renvoie les infos GPU et VRAM en temps réel.
+    """
+    return gpu_service.get_gpu_stats()

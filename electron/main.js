@@ -1,23 +1,27 @@
-const { app, BrowserWindow, ipcMain } = require("electron")
-const path = require("path")
+const { app, BrowserWindow } = require('electron');
+const path = require('path');
 
-let win
-
-app.whenReady().then(() => {
-  win = new BrowserWindow({
+function createWindow() {
+  const win = new BrowserWindow({
     width: 1200,
     height: 800,
-    frame: false, // IMPORTANT
     webPreferences: {
-      preload: path.join(__dirname, "preload.js"),
-    },
-  })
+      preload: path.join(__dirname, 'preload.js')
+    }
+  });
 
-  win.loadURL("http://localhost:5173") // ou fichier build
-})
+  // Correction pour utiliser localhost
+  const isDev = process.env.NODE_ENV === 'development' || !process.env.NODE_ENV;
 
-ipcMain.on("window:minimize", () => win.minimize())
-ipcMain.on("window:maximize", () =>
-  win.isMaximized() ? win.unmaximize() : win.maximize()
-)
-ipcMain.on("window:close", () => win.close())
+  if (isDev) {
+    win.loadURL('http://localhost:5173');
+  } else {
+    win.loadFile(path.join(__dirname, '../frontend/dist/index.html'));
+  }
+}
+
+app.whenReady().then(createWindow);
+
+app.on('window-all-closed', () => {
+  if (process.platform !== 'darwin') app.quit();
+});

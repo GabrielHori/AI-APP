@@ -1,7 +1,71 @@
-.window-btn {
-  width: 12px;
-  height: 12px;
-  border-radius: 9999px;
-  background-color: rgba(255,255,255,0.3);
-  transition: all 0.2s ease;
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* RESET */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body, #root {
+  width: 100%;
+  height: 100%;
+}
+
+body {
+  font-family: 'Inter', sans-serif;
+  background: #000;
+  color: #fff;
+  overflow: hidden;
+  -webkit-font-smoothing: antialiased;
+}
+
+/* BACKGROUNDS = PAS DE CLICS */
+.liquid-metal-bg,
+.glass-header {
+  pointer-events: none;
+}
+
+/* CONTENU INTERACTIF */
+button,
+input,
+textarea,
+select {
+  pointer-events: auto;
+}
+
+/* PANELS */
+.glass-panel {
+  background-color: #080808;
+  border: 1px solid rgba(255,255,255,0.06);
+  box-shadow: 0 20px 50px rgba(0,0,0,0.5);
+  pointer-events: auto;
+}
+
+/* TEXT */
+.text-glass {
+  color: #737373;
+}
+
+/* BUTTONS */
+.btn-ghost {
+  color: #666;
+  transition: all 0.25s ease;
+}
+.btn-ghost:hover {
+  color: #fff;
+  background: #111;
+}
+
+/* SCROLLBAR */
+::-webkit-scrollbar {
+  width: 6px;
+}
+::-webkit-scrollbar-thumb {
+  background: #222;
+  border-radius: 4px;
 }

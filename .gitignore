@@ -1,0 +1,70 @@
+# =========================
+# GLOBAL
+# =========================
+.DS_Store
+Thumbs.db
+*.log
+
+# =========================
+# ENVIRONNEMENTS VIRTUELS
+# =========================
+.venv/
+venv/
+env/
+
+# =========================
+# PYTHON
+# =========================
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+.pytest_cache/
+.mypy_cache/
+
+# =========================
+# NODE / FRONTEND / ELECTRON
+# =========================
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# =========================
+# VITE / BUILD
+# =========================
+dist/
+build/
+
+# =========================
+# ELECTRON
+# =========================
+electron/dist/
+electron/out/
+
+# =========================
+# IDE / EDITORS
+# =========================
+.vscode/
+.idea/
+*.swp
+
+# =========================
+# OS
+# =========================
+*.exe
+*.dll
+
+# =========================
+# SECRETS / CONFIG LOCALE
+# =========================
+.env
+.env.local
+.env.production
+.env.development
+
+# =========================
+# CACHE DIVERS
+# =========================
+.cache/

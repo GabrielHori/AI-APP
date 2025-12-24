@@ -8,3 +8,4 @@ python-multipart==0.0.6
 psutil==5.9.5
 GPUtil==1.4.0
 pynvml
+httpx==0.27.0
