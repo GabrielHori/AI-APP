@@ -1,22 +1,136 @@
-🌌 V1-IA-APP / Horizon
+🤖 Horizon IA App
 
+Application desktop permettant d’installer, gérer et lancer des IA locales automatiquement, en fonction de la configuration matérielle de l’utilisateur.
 
-🔹 Description
+L’objectif est de rendre l’IA locale accessible, simple et propre, sans bidouilles ni lignes de commande complexes.
 
-V1-IA-APP, alias Horizon, est une application d’intelligence artificielle user-friendly qui centralise l’utilisation de différents modèles IA (Claude, Qwen…) dans une interface moderne et intuitive. L’application simplifie l’expérience, que vous soyez débutant ou expert, et offre des options de personnalisation uniques.
+✨ Objectifs du projet
 
-🚀 Fonctionnalités principales
+Simplifier l’installation d’IA locales (LLM, modèles Ollama, etc.)
 
-💡 Lancer et gérer différents modèles IA : Claude, Qwen, etc.
+Adapter automatiquement les modèles à la configuration du PC
 
-🎛 Interface graphique moderne et intuitive avec dark theme.
+Offrir une interface claire, moderne et épurée
 
-⚡ Optimisée pour l’usage local ou cloud selon vos besoins.
+Centraliser la gestion des IA dans une seule application
 
-🛠 Stack technique
+Fonctionner 100% en local (privacy by design)
 
-Frontend : Electron + React
+🚀 Fonctionnalités (v1)
 
-Backend : Python + FastAPI
+🖥️ Détection automatique de la configuration matérielle
+(CPU, RAM, GPU, VRAM)
 
-IA : Intégration de modèles locaux et cloud
+🤖 Sélection intelligente des modèles IA compatibles
+
+📦 Installation guidée des modèles (via Ollama)
+
+💬 Interface de chat pour interagir avec les IA locales
+
+🧭 Dashboard simple pour gérer les modèles installés
+
+🧠 Backend stable et extensible (préparé pour la v2)
+
+🎨 Design & UX
+
+Design sobre, propre et épuré
+
+Esthétique Liquid Metal / glassy / minimal
+
+Focus sur la lisibilité, la fluidité et l’expérience utilisateur
+
+UI pensée comme un outil pro, pas une démo
+
+🛠️ Technologies utilisées
+Backend
+
+Python
+
+FastAPI – API rapide et robuste
+
+Uvicorn – Serveur ASGI
+
+Ollama – Gestion des modèles IA locaux
+
+Frontend
+
+React
+
+Vite
+
+Tailwind CSS
+
+Architecture modulaire et maintenable
+
+Desktop
+
+Electron
+
+Communication frontend ↔ backend en local
+
+📁 Structure du projet (Frontend)
+frontend/
+├── public/
+│   └── vite.svg
+├── src/
+│   ├── assets/
+│   ├── components/
+│   │   ├── AIChatPanel.jsx
+│   │   ├── MainPanel.jsx
+│   │   ├── Sidebar.jsx
+│   │   └── TopBar.jsx
+│   ├── layouts/
+│   │   └── AppLayout.jsx
+│   ├── pages/
+│   │   └── Dashboard.jsx
+│   ├── App.jsx
+│   ├── main.jsx
+│   ├── index.css
+│   └── App.css
+├── index.html
+├── package.json
+├── vite.config.mjs
+├── tailwind.config.js
+└── README.md
+
+🧩 Architecture globale
+Electron (Desktop App)
+        │
+        ▼
+Frontend (React + Vite)
+        │
+        ▼
+Backend (FastAPI)
+        │
+        ▼
+Ollama / IA locales
+
+🔒 Philosophie
+
+🔐 Respect de la vie privée (aucun cloud imposé)
+
+⚡ Performance locale
+
+🧠 IA accessible sans expertise technique
+
+🧱 Base solide pour évolutions futures (plugins, profils, marketplace IA…)
+
+🛣️ Roadmap (v2 – à venir)
+
+Profils utilisateurs
+
+Gestion avancée des ressources
+
+Téléchargement automatique de modèles recommandés
+
+Presets par usage (dev, créatif, rédaction, etc.)
+
+Plugins & extensions
+
+Monitoring des performances IA
+
+👤 Auteur
+
+Gabriel (Horizon)
+Développeur & créateur du projet Horizon
+Projet personnel orienté IA locale, UX et outils intelligents
