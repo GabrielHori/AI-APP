@@ -69,6 +69,7 @@ Electron
 Communication frontend ↔ backend en local
 
 📁 Structure du projet (Frontend)
+```bash
 frontend/
 ├── public/
 │   └── vite.svg
@@ -92,7 +93,9 @@ frontend/
 ├── vite.config.mjs
 ├── tailwind.config.js
 └── README.md
+```
 
+```bash
 🧩 Architecture globale
 Electron (Desktop App)
         │
@@ -104,6 +107,7 @@ Backend (FastAPI)
         │
         ▼
 Ollama / IA locales
+```
 
 🔒 Philosophie
 
