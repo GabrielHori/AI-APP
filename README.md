@@ -68,30 +68,38 @@ Electron
 
 Communication frontend ↔ backend en local
 
-📁 Structure du projet (Frontend)
+📁 Structure du projet 
 ```bash
-frontend/
-├── public/
-│   └── vite.svg
-├── src/
-│   ├── assets/
-│   ├── components/
-│   │   ├── AIChatPanel.jsx
-│   │   ├── MainPanel.jsx
-│   │   ├── Sidebar.jsx
-│   │   └── TopBar.jsx
-│   ├── layouts/
-│   │   └── AppLayout.jsx
-│   ├── pages/
-│   │   └── Dashboard.jsx
-│   ├── App.jsx
-│   ├── main.jsx
-│   ├── index.css
-│   └── App.css
-├── index.html
+IA-APP/
+├── frontend/                # Interface utilisateur
+│   ├── public/
+│   ├── src/
+│   │   ├── components/
+│   │   ├── layouts/
+│   │   ├── pages/
+│   │   ├── styles/
+│   │   ├── App.jsx
+│   │   └── main.jsx
+│   ├── package.json
+│   └── vite.config.js
+│
+├── backend/                 # API & logique métier
+│   ├── app/
+│   │   ├── api/             # Routes FastAPI
+│   │   ├── core/            # Config & utils
+│   │   ├── services/        # Ollama / system info
+│   │   ├── models/
+│   │   └── main.py
+│   ├── requirements.txt
+│   └── venv/
+│
+├── electron/                # Application desktop
+│   ├── main.js
+│   ├── preload.js
+│   └── package.json
+│
+├── .gitignore
 ├── package.json
-├── vite.config.mjs
-├── tailwind.config.js
 └── README.md
 ```
 
